@@ -1,0 +1,33 @@
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+   
+  .lesson {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .lessons {
+    flex-wrap:wrap;
+  }
+
+  }
+  
+  /* Untuk Smartphone */
+  @media all and (max-width: 670px) {
+    .header-right {
+      display: none;
+    }
+    
+    span.menu-icon {
+      display: block;
+    }
+
+    .lessons {
+      justify-content: center;
+      height: 100% auto;
+    }
+
+    .lesson {
+      width: 100%;
+    }
+  }
