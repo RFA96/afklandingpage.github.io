@@ -11,6 +11,11 @@ body {
     font-family: "Raleway";
 }
 
+#viewDiv {
+    width: 100%;
+    height: 200px;
+}
+
 .about-section {
     padding: 50px;
     text-align: center;
@@ -256,7 +261,7 @@ button {
 .title-contact {
     padding: 10px 0;
     border-radius: 10px;
-    margin: 100px 0;
+    margin: 20px 0;
     background-color: #1E90FF;
     color: white;
 }
@@ -348,3 +353,113 @@ button {
 
 
 /* End Section Contact Us */
+
+/* Footer Starts */
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: #2f2f2f;
+    background-color: rgba(30, 144, 255, 0.4);
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer > * {
+    flex:  1 100%;
+}
+
+.footer_addr {
+    /*margin-right: 1.25em;*/
+    margin-bottom: 2em;
+}
+
+.footer_logo {
+    width: 40%;
+    height: 250px;
+}
+
+.footer_addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.nav_title {
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.footer address {
+    font-style: normal;
+    color: #999;
+}
+
+.footer_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(33, 33, 33, 0.07);
+    border-radius: 100px;
+    color: #2f2f2f;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li {
+    line-height: 2em;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer_nav {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer_nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+
+.nav_ul a {
+    color: black;
+}
+
+.nav_ul--extra {
+    column-count: 2;
+    column-gap: 1.25em;
+}
+
+.copyright {
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.copyright_links {
+    display: flex;
+    align-items: center;
+}
+
+.heart {
+    color: red;
+}
+
+hr {
+    height:2px;
+    border-width:0;
+    color:black;
+    background-color: black;
+}
+/* Footer Ends */

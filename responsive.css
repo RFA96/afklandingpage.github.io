@@ -13,23 +13,27 @@
     .product_section h3 {
         font-size: 32px;
     }
+
     /* Section Contact Us */
     .box-contact {
         flex-wrap: wrap;
     }
+
     .box-icon {
         width: 50%;
     }
+
     .box-contents {
         width: 50%;
         justify-content: center;
     }
 
-    .box-form{
+    .box-form {
         width: 50%;
         padding: 0px;
-        
+
     }
+
     /* End Section Contact Us */
 
 }
@@ -63,28 +67,30 @@
         font-size: 16px;
         border: none;
         cursor: pointer;
-      }
+    }
 
-      .dropdown-content {
+    .dropdown-content {
         display: none;
         position: absolute;
         background-color: #f9f9f9;
         margin-top: 50px;
         margin-left: 520px;
-      }
-      
-      .dropdown-content a {
+    }
+
+    .dropdown-content a {
         color: black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
-      }
-      
-      .dropdown-content a:hover {background-color: #f1f1f1}
-      
-      .dropdown:hover .dropdown-content {
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+
+    .dropdown:hover .dropdown-content {
         display: block;
-      }
+    }
 
     .container_products {
         padding: 0;
@@ -94,38 +100,71 @@
     .product_section h3 {
         font-size: 20px;
     }
+
     .product_section {
         height: 4000px;
     }
-    /* Star Section Contact Us */
+
+    /* Start Section Contact Us */
     .contact-us {
         justify-content: center;
-}
+    }
+
     .box-contact {
         justify-content: center;
-}
+    }
+
     .box-icon {
         width: 100%;
-} 
+    }
 
     .box-contents {
         justify-content: center;
         width: 100%;
-}
-    .box-form{
+    }
+
+    .box-form {
         width: 100%;
         padding: 20;
-}
-    .box-form input { 
-        width:100%;
+    }
 
-}
+    .box-form input {
+        width: 100%;
+
+    }
+
     .box-form textarea {
-        width:100%;
-} 
+        width: 100%;
+    }
+
     .box-form button {
         width: 100%;
         margin: 0;
+    }
+
+    /* End Section Contact Us    */
 }
- /* End Section Contact Us    */
+
+@media screen and (min-width: 390px) {
+    .copyright .copyright_links {
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 646px) {
+    .footer_nav > * {
+        flex: 1;
+    }
+
+    .nav_item--extra {
+        flex-grow: 2;
+    }
+
+    .footer_addr {
+        flex: 1 0px;
+    }
+
+    .footer_nav {
+        flex: 2 0px;
+    }
 }

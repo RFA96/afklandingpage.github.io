@@ -12,6 +12,20 @@ $(document).on("click", ".header-right a", function (e) {
     }, 800);
 });
 
+$(document).on("click", ".nav_ul li a", function (e) {
+    e.preventDefault();
+
+    let id = $(this).attr("href");
+    var topSpace = 30;
+
+    $(".header-right a").removeClass("active");
+    $(this).addClass("active");
+
+    $('html, body').animate({
+        scrollTop: $(id).offset().top - topSpace
+    }, 800);
+});
+
 $(".sum_stores").spincrement({
     from: 0,
     to: 300,
@@ -46,6 +60,24 @@ $(".sum_products").spincrement({
     leeway: 50, // percent of duraion
     easing: 'spincrementEasing',
     fade: true
+});
+
+// Script for displaying MapView (2D)
+require([
+    "esri/views/MapView",
+    "esri/WebMap"
+], (MapView, WebMap) => {
+    const webmap = new WebMap({
+        portalItem: {
+            id: "4fd23adb7586442ca4ed5fe517d90aec"
+        }
+    });
+
+    const view = new MapView({
+        map: webmap,
+        container: "viewDiv"
+    });
+
 });
 
 // $(window).scroll(function () {
